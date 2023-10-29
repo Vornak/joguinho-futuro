@@ -1,4 +1,3 @@
-
 function calcula(){
 
     const pessoa1 = document.getElementById("pessoa1").value;
@@ -68,23 +67,50 @@ function consulta(){
   
 }
 
+// Adicione ouvintes de evento para cada elemento
+elementoLugar.addEventListener('click', function(event) {
+  event.preventDefault();
+  setTimeout(function() {
+    remove(lugar, 1, "lugarF");
+  }, 2000);
+});
 
+elementoFilhos.addEventListener('click', function(event) {
+  event.preventDefault();
+  setTimeout(function() {
+    remove(filhos, 1, "filhoF");
+  }, 3000);
+});
 
-setTimeout(function() {
-  remove(lugar, 1, "lugarF");
-}, 2000);
+elementoDinheiro.addEventListener('click', function(event) {
+  event.preventDefault();
+  setTimeout(function() {
+    remove(dinheiro, 1, "dinheiroF");
+  }, 4000);
+});
 
-setTimeout(function() {
-  remove(filhos, 1, "filhoF");
-}, 3000);
+elementoCasamento.addEventListener('click', function(event) {
+  event.preventDefault();
+  setTimeout(function() {
+    remove(casamento, 1, "casamentoF");
+  }, 5000);
+});
 
-setTimeout(function() {
-  remove(dinheiro, 1, "dinheiroF");
-}, 4000);
+// setTimeout(function() {
+//   remove(lugar, 1, "lugarF");
+// }, 2000);
 
-setTimeout(function() {
-  remove(casamento, 1, "casamentoF");
-}, 5000);
+// setTimeout(function() {
+//   remove(filhos, 1, "filhoF");
+// }, 3000);
+
+// setTimeout(function() {
+//   remove(dinheiro, 1, "dinheiroF");
+// }, 4000);
+
+// setTimeout(function() {
+//   remove(casamento, 1, "casamentoF");
+// }, 5000);
 
 
 }
